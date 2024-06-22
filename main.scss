@@ -196,5 +196,15 @@ body {
     display: flex;
     justify-content: space-between;
     padding: var(--gutter-gap-4) var(--gutter-gap-14);
+
+    &__icon-box {
+        .icon-text {
+            font-size: var(--text-lg);
+        }
+    }
+
+    &__links {
+        background-color: red;
+    }
 }
 /* End of nav styles */

@@ -194,5 +194,9 @@ body {
   display: flex;
   justify-content: space-between;
   padding: var(--gutter-gap-4) var(--gutter-gap-14); }
+  .main-nav__icon-box .icon-text {
+    font-size: var(--text-lg); }
+  .main-nav__links {
+    background-color: red; }
 
 /* End of nav styles */
