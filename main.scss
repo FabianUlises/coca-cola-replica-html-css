@@ -1,0 +1,200 @@
+:root {
+    color-scheme: light dark;
+    /* Typography */
+    /* Responsive */
+    --heading-1-respd: clamp(2.6rem, 5vw, 7.6rem);
+    --heading-2-respd: clamp(2.2rem, 4vw, 5.7rem);
+    --heading-4-respd: clamp(2rem, 3.5vw, 3.2rem);
+    --link-respd: clamp(var(--text-sm), 2vw, var(--text-reg));
+    /* Font sizes */
+    --text-xsm: 1.2rem;
+    --text-sm: 1.35rem;
+    --text-reg: 1.6rem;
+    --text-reg-2: 1.8rem;
+    --text-md: 2.0rem;
+    --text-lg: 2.4rem;
+    /* Line heights */
+    --text-line-height-0: 2.2rem;
+    --text-line-height-1: 2.6rem;
+    --text-line-height-2: 2.9rem;
+    --text-line-height-3: 3,2rem;
+    --text-line-height-4: 3.9rem;
+    /* Page colors */
+    --primary-bg-light: hsl(210 45% 95%);
+    --primary-bg-dark: hsl(210 25% 15%);
+    --text-light: hsl(210 5% 2%);
+    --text-dark: hsl(210 15% 98%);
+    /* Button styles */
+    /* Colors */
+    --button-primary-light: hsl(210 50% 50%);
+    --button-primary-light-hover: hsl(210 40% 47%);
+    --button-primary-light-active: hsl(210 62% 55%);
+    --button-primary-dark: hsl(0, 0%, 28%);
+    --button-primary-dark-hover: hsl(0, 0%, 15%);
+    --button-primary-dark-active: hsl(0, 0%, 35%);
+    --button-secondary-light: hsl(350, 80%, 68%);
+    --button-secondary-light-hover: hsl(350, 70%, 65%);
+    --button-secondary-light-active: hsl(350, 82%, 70%);
+    --button-secondary-dark: hsl(300, 80%, 68%);
+    --button-secondary-dark-hover: hsl(350, 70%, 65%);
+    --button-secondary-dark-active: hsl(350, 82%, 70%);
+    --button-disabled-light: hsl(240, 10%, 92%);
+    --button-disabled-dark: hsl(247, 10%, 18%);
+    --button-disabled-text: hsl(0, 0%, 75%);
+    --button-text-light: hsl(210 0% 92%);
+    --button-text-dark: hsl(210 0% 4%);
+    --button-disabled: light-dark(var(--button-disabled-light), var(--button-disabled-dark));
+    /* Padding for sizing */
+    --button-padding-xsm: .8rem 1rem;
+    --button-padding-sm: .8rem 1.6rem;
+    --button-padding: 1.8rem 3.2rem;
+    /* Transition */
+    --button-active-scale: scale(1.010);
+    /* Gutters */
+    /* Sections */
+    --gutter-section-sm: 4rem;
+    --gutter-section-md: 8rem;
+    --gutter-section-lg: 12rem;
+    --gutter-section-xl: 14.4rem;
+    /* Gaps */
+    --gutter-gap-1: .4rem;
+    --gutter-gap-2: .8rem;
+    --gutter-gap-3: 1.2rem;
+    --gutter-gap-4: 1.6rem;
+    --gutter-gap-5: 2rem;
+    --gutter-gap-6: 2.4rem;
+    --gutter-gap-7: 3.2rem;
+    --gutter-gap-8: 4rem;
+    --gutter-gap-9: 4.8rem;
+    --gutter-gap-10: 5.6rem;
+    --gutter-gap-11: 6.4rem;
+    --gutter-gap-12: 7.2rem;
+    --gutter-gap-13: 8rem;
+    --gutter-gap-14: 8.8rem;
+    --gutter-gap-15: 9.6rem;
+    --gutter-gap-16: 10.4rem;
+    --gutter-gap-17: 11.2rem;
+    --gutter-gap-18: 12rem;
+    --gutter-gap-19: 12.8rem;
+    --gutter-gap-20: 13.6rem;
+    /* Gutters for grid */
+    --gutter-grid-y: var(--gutter-gap-10);
+    --gutter-grid-x: var(--gutter-gap-7);
+    --gutter-grid-1: var(--gutter-grid-y) var(--gutter-grid-x);
+}
+/* Start of base styles */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+h1 {
+    /* font-size: 7.6rem; */
+    /* Responsive */
+    font-size: var(--heading-1-respd);
+}
+h2 {
+    /* font-size: 5.7rem; */
+    /* Responsive */
+    font-size: var(--heading-2-respd);
+}
+h3 {
+    font-size: 4.3rem;
+}
+h4 {
+    /* font-size: 3.2rem; */
+    /* Responsive */
+    font-size: var(--heading-4-respd);
+
+}
+h5 {
+    font-size: 2.6rem;
+}
+/* Paragraphs */
+p {
+    font-size: var(--text-reg);
+    line-height: var(--text-line-height-1);
+    font-weight: 300;
+}
+/* Elements */
+a {
+    font-size: var(--link-respd);
+    text-decoration: none;
+}
+img {
+    display: inline-block;
+    inline-size: 100%;
+    height: auto;
+}
+button {
+    color: inherit;
+    font-size: var(--text-reg);
+    line-height: var(--text-reg);
+    letter-spacing: .4px;
+    border: none;
+    padding: var(--button-padding-sm);
+    cursor: pointer;
+    display: inline-block;
+    /* Optional */
+    /* border-radius: 2px; */
+}
+/* Classes */
+.button-disabled {
+    background-color: var(--button-disabled);
+    color: var(--button-disabled-text);
+    outline: none;
+    /* Nested support only */
+    /* &:hover {
+        background-color: var(--button-disabled);
+    } */
+}
+.button-disabled:hover {
+    background-color: var(--button-disabled);
+    cursor: default;
+}
+.max-w {
+    max-inline-size: 120rem;
+    margin: 0 auto;
+}
+.page-p-x {
+    padding-inline: .4rem;
+}
+/* Removes padding when max width of 1200px */
+@media only screen and (min-width: 75em) {
+    .page-p-x {
+        padding-inline: 0;
+    }
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+body {
+    background-color: light-dark(var(--primary-bg-light), var(--primary-bg-dark));
+    color: light-dark(var(--text-light), var(--text-dark));
+    font-family: sans-serif;
+}
+/* End of base styles */
+/* Start of nav styles */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--gutter-gap-4) var(--gutter-gap-14);
+}
+/* End of nav styles */
