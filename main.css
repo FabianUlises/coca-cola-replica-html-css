@@ -193,10 +193,14 @@ body {
 .main-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: var(--gutter-gap-4) var(--gutter-gap-14); }
   .main-nav__icon-box .icon-text {
     font-size: var(--text-lg); }
   .main-nav__links {
-    background-color: red; }
+    display: flex;
+    align-items: center;
+    gap: var(--gutter-gap-8);
+    list-style: none; }
 
 /* End of nav styles */
