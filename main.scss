@@ -195,16 +195,19 @@ body {
 /* End of base styles */
 /* Start of nav styles */
 .main-nav {
-    background-color: var(--white);
-    color: black;
+    min-block-size: 7rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: var(--gutter-gap-6) var(--gutter-gap-18);
+    background-color: var(--white);
+    color: black;
+    padding-inline: var(--gutter-gap-18);
     border-block-end: 1px solid black;
     // Navbar icon
     &__icon-box {
         .icon-link {
+            block-size: 100%;
+            display: flex;
+            align-items: center;
             color: black;
             font-size: 1.6rem;
             font-weight: 200;
