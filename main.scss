@@ -20,6 +20,7 @@
     --text-line-height-3: 3,2rem;
     --text-line-height-4: 3.9rem;
     /* Page colors */
+    --white: #ffffff;
     --primary-bg-light: hsl(210 45% 95%);
     --primary-bg-dark: hsl(210 25% 15%);
     --text-light: hsl(210 5% 2%);
@@ -193,6 +194,8 @@ body {
 /* End of base styles */
 /* Start of nav styles */
 .main-nav {
+    background-color: var(--white);
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
