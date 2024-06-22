@@ -199,20 +199,37 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--gutter-gap-4) var(--gutter-gap-14);
-
+    padding: var(--gutter-gap-6) var(--gutter-gap-18);
+    border-block-end: 1px solid black;
+    // Navbar icon
     &__icon-box {
         .icon-text {
-            font-size: var(--text-lg);
-            font-weight: 600;
+            font-size: 2.2rem;
+            font-weight: 800;
         }
     }
-
+    // Navbar links
     &__links {
+        font-weight: 400;
+        letter-spacing: 1.15px;
         display: flex;
         align-items: center;
         gap: var(--gutter-gap-8);
         list-style: none;
+    }
+
+    &__link a,
+    &__link a:visited
+    &__link a:link{
+        color: black;
+    }
+    // Navbar widgets`
+    &__widgets {
+        display: flex;
+        gap: var(--gutter-gap-8);
+    }
+    &__widget {
+        font-size: var(--text-lg);
     }
 }
 /* End of nav styles */
