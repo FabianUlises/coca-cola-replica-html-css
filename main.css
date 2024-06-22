@@ -196,7 +196,8 @@ body {
   align-items: center;
   padding: var(--gutter-gap-4) var(--gutter-gap-14); }
   .main-nav__icon-box .icon-text {
-    font-size: var(--text-lg); }
+    font-size: var(--text-lg);
+    font-weight: 600; }
   .main-nav__links {
     display: flex;
     align-items: center;
