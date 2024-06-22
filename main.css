@@ -1,4 +1,11 @@
 :root {
+  --red: #f40000;
+  --orange: #ff560e;
+  --lime-green: #6ace7f;
+  --light-blue: #6ac9ce;
+  --tan: #d7b85b;
+  --dark-tan: #b59e74;
+  --orange: #f79900;
   /* Typography */
   /* Responsive */
   --heading-1-respd: clamp(2.6rem, 5vw, 7.6rem);
@@ -229,6 +236,7 @@ body {
     display: flex;
     align-items: center;
     font-size: var(--text-lg);
-    padding-inline: 2.4rem; }
+    padding-inline: 2.4rem;
+    cursor: pointer; }
 
 /* End of nav styles */
