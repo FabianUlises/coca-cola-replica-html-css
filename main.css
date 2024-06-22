@@ -191,3 +191,10 @@ body {
     font-family: sans-serif;
 }
 /* End of base styles */
+/* Start of nav styles */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--gutter-gap-4) var(--gutter-gap-14);
+}
+/* End of nav styles */
