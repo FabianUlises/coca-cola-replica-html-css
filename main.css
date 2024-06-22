@@ -213,17 +213,22 @@ body {
     font-weight: 400;
     letter-spacing: 1.15px;
     display: flex;
-    align-items: center;
-    gap: var(--gutter-gap-8);
     list-style: none; }
   .main-nav__link a,
   .main-nav__link a:visited
 .main-nav__link a:link {
-    color: black; }
-  .main-nav__widgets {
     display: flex;
-    gap: var(--gutter-gap-8); }
+    block-size: 100%;
+    align-items: center;
+    color: black;
+    padding-inline: 2.4rem; }
+  .main-nav__widgets {
+    display: flex; }
   .main-nav__widget {
-    font-size: var(--text-lg); }
+    block-sizE: 100%;
+    display: flex;
+    align-items: center;
+    font-size: var(--text-lg);
+    padding-inline: 2.4rem; }
 
 /* End of nav styles */

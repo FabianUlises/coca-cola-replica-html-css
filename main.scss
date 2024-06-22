@@ -223,23 +223,30 @@ body {
         font-weight: 400;
         letter-spacing: 1.15px;
         display: flex;
-        align-items: center;
-        gap: var(--gutter-gap-8);
         list-style: none;
     }
 
     &__link a,
     &__link a:visited
     &__link a:link{
+        display: flex;
+        block-size: 100%;
+        align-items: center;
         color: black;
+        padding-inline: 2.4rem;
+
     }
     // Navbar widgets`
     &__widgets {
         display: flex;
-        gap: var(--gutter-gap-8);
     }
     &__widget {
+        block-sizE: 100%;
+        display: flex;
+        align-items: center;
         font-size: var(--text-lg);
+        padding-inline: 2.4rem;
+
     }
 }
 /* End of nav styles */
