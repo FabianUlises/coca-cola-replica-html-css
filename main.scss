@@ -1,5 +1,5 @@
 :root {
-    color-scheme: light dark;
+    // color-scheme: light dark;
     /* Typography */
     /* Responsive */
     --heading-1-respd: clamp(2.6rem, 5vw, 7.6rem);
@@ -187,7 +187,8 @@ button {
     box-sizing: inherit;
 }
 body {
-    background-color: light-dark(var(--primary-bg-light), var(--primary-bg-dark));
+    min-block-size: 100vh;
+    background-color: #eeeeee;
     color: light-dark(var(--text-light), var(--text-dark));
     font-family: sans-serif;
 }
