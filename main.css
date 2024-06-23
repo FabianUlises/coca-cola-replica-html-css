@@ -199,7 +199,7 @@ body {
 /* End of base styles */
 /* Start of nav styles */
 .main-nav {
-  min-block-size: 7rem;
+  min-block-size: 7.65rem;
   display: flex;
   justify-content: space-between;
   background-color: var(--white);
