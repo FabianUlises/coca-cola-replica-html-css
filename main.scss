@@ -339,6 +339,8 @@ body {
     background-color: var(--white);
     // inline-size: 54.5rem;
     block-size: 65rem;
+    display: flex;
+    flex-direction: column;
     border-radius: var(--text-reg);
     &__img {
         background-color: red;
@@ -346,6 +348,7 @@ body {
         border-radius: var(--text-reg);
     }
     &__content {
+        flex: 1;
         display: flex;
         flex-direction: column;
         padding: 4rem;
@@ -363,6 +366,8 @@ body {
         line-height: 1.6;
     }
     &__cta {
-        margin-block-end: auto;
+        margin-block-start: auto;
+        color: black;
+        font-weight: 800;
     }
 }
