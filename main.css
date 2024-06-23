@@ -286,3 +286,36 @@ body {
   margin: 0 auto;
   border-radius: 16px;
   margin-block-end: var(--gutter-section-lg); }
+
+.about-section {
+  max-inline-size: 1200px;
+  margin: 0 auto; }
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(52.5rem, 1fr));
+  gap: 2rem; }
+
+.about-card {
+  background-color: var(--white);
+  block-size: 65rem;
+  border-radius: var(--text-reg); }
+  .about-card__img {
+    background-color: red;
+    block-size: 30rem;
+    border-radius: var(--text-reg); }
+  .about-card__content {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem; }
+  .about-card__header {
+    font-size: var(--text-md);
+    font-weight: 600;
+    margin-block-end: 3rem; }
+  .about-card__text {
+    font-size: var(--text-reg-2);
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 1.5; }
+  .about-card__cta {
+    margin-block-end: auto; }
