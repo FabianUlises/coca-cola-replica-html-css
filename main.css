@@ -284,4 +284,5 @@ body {
   max-inline-size: 140.4rem;
   background-color: #fff;
   margin: 0 auto;
-  border-radius: 16px; }
+  border-radius: 16px;
+  margin-block-end: var(--gutter-section-lg); }
