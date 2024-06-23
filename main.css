@@ -277,9 +277,12 @@ body {
 
 /* End of nav styles */
 .section {
+  inline-size: 115.2rem;
+  margin: 0 auto;
+  padding: 1rem;
   margin-block-end: var(--gutter-section-lg); }
   .section__title {
-    font-size: 3.8rem;
+    font-size: 3.6rem;
     font-weight: 600;
     margin-block-end: var(--gutter-gap-8);
     text-align: center; }
@@ -295,16 +298,17 @@ body {
   border-radius: 16px; }
 
 .about-section {
-  max-inline-size: 1200px;
   margin-inline: auto; }
 
 .about-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(52.5rem, 1fr));
-  gap: var(--gutter-gap-7); }
+  grid-template-columns: repeat(auto-fit, minmax(54.5rem, 1fr));
+  justify-items: center;
+  gap: 2.2rem; }
 
 .about-card {
   background-color: var(--white);
+  inline-size: 54.5rem;
   block-size: 65rem;
   display: flex;
   flex-direction: column;
