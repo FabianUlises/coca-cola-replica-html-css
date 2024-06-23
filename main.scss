@@ -234,7 +234,6 @@ body {
         display: flex;
         list-style: none;
     }
-
     &__link a,
     &__link a:visited
     &__link a:link{
@@ -243,7 +242,10 @@ body {
         align-items: center;
         color: black;
         padding-inline: 2.4rem;
-
+    }
+    &__link--1 a:hover {
+        background-color: var(--red);
+        color: var(--white);
     }
     // Navbar widgets`
     &__widgets {

@@ -229,6 +229,9 @@ body {
     align-items: center;
     color: black;
     padding-inline: 2.4rem; }
+  .main-nav__link--1 a:hover {
+    background-color: var(--red);
+    color: var(--white); }
   .main-nav__widgets {
     display: flex; }
   .main-nav__widget {
