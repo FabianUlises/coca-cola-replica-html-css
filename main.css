@@ -279,7 +279,7 @@ body {
 .section {
   margin-block-end: var(--gutter-section-lg); }
   .section__title {
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 600;
     margin-block-end: var(--gutter-gap-8);
     text-align: center; }
