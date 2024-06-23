@@ -218,6 +218,9 @@ body {
     color: black;
     // Navbar icon
     &__icon-box {
+        @media only screen and (max-width: 1200px) {
+            padding-inline-start: 2rem;
+        }
         .icon-link {
             block-size: 100%;
             display: flex;
@@ -242,6 +245,10 @@ body {
         letter-spacing: 1px;
         display: flex;
         list-style: none;
+
+        @media only screen and (max-width: 1200px) {
+            display: none;
+        }
     }
     &__link a,
     &__link a:visited
@@ -295,3 +302,15 @@ body {
     }
 }
 /* End of nav styles */
+// Main section styles
+.main-section {
+    padding-block-start: 4rem;
+}
+// Start of carousel styles
+.carousel {
+    block-size: 60rem;
+    max-inline-size: 140.4rem;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 16px;
+}

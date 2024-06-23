@@ -211,6 +211,9 @@ body {
   justify-content: space-between;
   background-color: var(--white);
   color: black; }
+  @media only screen and (max-width: 1200px) {
+    .main-nav__icon-box {
+      padding-inline-start: 2rem; } }
   .main-nav__icon-box .icon-link {
     block-size: 100%;
     display: flex;
@@ -229,6 +232,9 @@ body {
     letter-spacing: 1px;
     display: flex;
     list-style: none; }
+    @media only screen and (max-width: 1200px) {
+      .main-nav__links {
+        display: none; } }
   .main-nav__link a,
   .main-nav__link a:visited
 .main-nav__link a:link {
@@ -270,3 +276,12 @@ body {
     cursor: pointer; }
 
 /* End of nav styles */
+.main-section {
+  padding-block-start: 4rem; }
+
+.carousel {
+  block-size: 60rem;
+  max-inline-size: 140.4rem;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 16px; }
