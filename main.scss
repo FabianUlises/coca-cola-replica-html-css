@@ -304,7 +304,7 @@ body {
 /* End of nav styles */
 // Main section styles
 .section {
-    inline-size: 115.2rem;
+    max-inline-size: 115.2rem;
     margin: 0 auto;
     padding: 1rem;
     margin-block-end: var(--gutter-section-lg);
@@ -336,11 +336,14 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(54.5rem, 1fr));
     justify-items: center;
     gap: 2.2rem;
+    @media only screen and (max-width: 570px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 // About section cards
 .about-card {
     background-color: var(--white);
-    inline-size: 54.5rem;
     block-size: 65rem;
     display: flex;
     flex-direction: column;
@@ -349,6 +352,15 @@ body {
         background-color: red;
         block-size: 30rem;
         border-radius: var(--text-reg);
+        overflow: hidden;
+
+        img {
+            inline-size: 100%;
+            block-size: 100%;
+            object-fit: cover;
+            object-position: center;
+
+        }
     }
     &__content {
         flex: 1;
@@ -367,6 +379,9 @@ body {
         letter-spacing: .75px;
         font-weight: 500;
         line-height: 1.6;
+        @media only screen and (max-width: 514px) {
+            margin-block-end: var(--gutter-gap-8);
+        }
     }
     &__cta {
         margin-block-start: auto;
