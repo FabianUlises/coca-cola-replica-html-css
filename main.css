@@ -232,6 +232,24 @@ body {
   .main-nav__link--1 a:hover {
     background-color: var(--red);
     color: var(--white); }
+  .main-nav__link--2 a:hover {
+    background-color: var(--orange);
+    color: var(--white); }
+  .main-nav__link--3 a:hover {
+    background-color: var(--lime-green);
+    color: var(--white); }
+  .main-nav__link--4 a:hover {
+    background-color: var(--light-blue);
+    color: var(--white); }
+  .main-nav__link--5 a:hover {
+    background-color: var(--tan);
+    color: var(--white); }
+  .main-nav__link--6 a:hover {
+    background-color: var(--orange);
+    color: var(--white); }
+  .main-nav__link--7 a:hover {
+    background-color: var(--dark-tan);
+    color: var(--white); }
   .main-nav__widgets {
     display: flex; }
   .main-nav__widget {
