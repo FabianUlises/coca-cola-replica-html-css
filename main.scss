@@ -203,14 +203,19 @@ body {
 }
 /* End of base styles */
 /* Start of nav styles */
+.navbar {
+    inline-size: 100%;
+    background-color: var(--white);
+    border-block-end: 1px solid black;
+}
 .main-nav {
     min-block-size: 7.65rem;
+    max-inline-size: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     background-color: var(--white);
     color: black;
-    padding-inline: var(--gutter-gap-18);
-    border-block-end: 1px solid black;
     // Navbar icon
     &__icon-box {
         .icon-link {
@@ -218,19 +223,20 @@ body {
             display: flex;
             align-items: center;
             color: black;
-            font-size: 1.6rem;
             font-weight: 200;
+            font-size: 1.2rem;
         }
         .icon-text {
             font-weight: 600;
-            font-size: 2.2rem;
+            padding-inline: .25rem;
+            
         }
 
     }
     // Navbar links
     &__links {
-        font-weight: 400;
-        letter-spacing: 1.15px;
+        font-weight: 200;
+        letter-spacing: 1px;
         display: flex;
         list-style: none;
     }
@@ -241,7 +247,8 @@ body {
         block-size: 100%;
         align-items: center;
         color: black;
-        padding-inline: 2.4rem;
+        padding-inline: 2rem;
+        font-size: 1.4rem;
     }
     &__link--1 a:hover {
         background-color: var(--red);
@@ -279,8 +286,8 @@ body {
         block-sizE: 100%;
         display: flex;
         align-items: center;
-        font-size: var(--text-lg);
-        padding-inline: 2.4rem;
+        font-size: var(--text-md);
+        padding-inline: 2rem;
         cursor: pointer;
     }
 }
