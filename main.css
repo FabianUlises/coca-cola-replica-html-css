@@ -276,25 +276,32 @@ body {
     cursor: pointer; }
 
 /* End of nav styles */
+.section {
+  margin-block-end: var(--gutter-section-lg); }
+  .section__title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-block-end: var(--gutter-gap-8);
+    text-align: center; }
+
 .main-section {
-  padding-block-start: 4rem; }
+  padding-block-start: var(--gutter-gap-8); }
 
 .carousel {
   block-size: 60rem;
   max-inline-size: 140.4rem;
   background-color: #fff;
-  margin: 0 auto;
-  border-radius: 16px;
-  margin-block-end: var(--gutter-section-lg); }
+  margin-inline: auto;
+  border-radius: 16px; }
 
 .about-section {
   max-inline-size: 1200px;
-  margin: 0 auto; }
+  margin-inline: auto; }
 
 .about-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(52.5rem, 1fr));
-  gap: 2rem; }
+  gap: var(--gutter-gap-7); }
 
 .about-card {
   background-color: var(--white);
@@ -309,13 +316,14 @@ body {
     flex-direction: column;
     padding: 4rem; }
   .about-card__header {
-    font-size: var(--text-md);
+    font-size: 1.8rem;
     font-weight: 600;
+    letter-spacing: .75px;
     margin-block-end: 3rem; }
   .about-card__text {
     font-size: var(--text-reg-2);
-    letter-spacing: 1px;
+    letter-spacing: .75px;
     font-weight: 500;
-    line-height: 1.5; }
+    line-height: 1.6; }
   .about-card__cta {
     margin-block-end: auto; }
